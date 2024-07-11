@@ -9,9 +9,9 @@ def is_even(number): return is_divisible(number, 2) Better naming and a better t
 
 Elementary
 
-Write a program that prints ‘Hello World’ to the screen.
-Write a program that asks the user for their name and greets them with their name.
-Modify the previous program such that only the users Alice and Bob are greeted with their names.
+1 Write a program that prints ‘Hello World’ to the screen.
+2 Write a program that asks the user for their name and greets them with their name.
+3 Modify the previous program such that only the users Alice and Bob are greeted with their names.
 Write a program that asks the user for a number n and prints the sum of the numbers 1 to n
 Modify the previous program such that only multiples of three or five are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n=17
 Write a program that asks the user for a number n and gives them the possibility to choose between computing the sum and computing the product of 1,…,n.
