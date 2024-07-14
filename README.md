@@ -46,15 +46,15 @@ If your language of choice doesn’t have a build in list and/or string type (e.
 
 6 Write a function that tests whether a string is a palindrome.
 
-Write three functions that compute the sum of the numbers in a list: using a for-loop, a while-loop and recursion. (Subject to availability of these constructs in your language of choice.)
+7 Write three functions that compute the sum of the numbers in a list: using a for-loop, a while-loop and recursion. (Subject to availability of these constructs in your language of choice.)
 
-Write a function on_all that applies a function to every element of a list. Use it to print the first twenty perfect squares (a natural number nn is a perfect square if it can be written as n=mmn=mm for some other natural number mm. 1,4,9,16,251,4,9,16,25 are the first 5).
+8 Write a function on_all that applies a function to every element of a list. Use it to print the first twenty perfect squares (a natural number nn is a perfect square if it can be written as n=mmn=mm for some other natural number mm. 1,4,9,16,251,4,9,16,25 are the first 5).
 
-Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
+9 Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
 
-Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+10 Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
-Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6]. You can do this quicker than concatenating them followed by a sort.
+11 Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6]. You can do this quicker than concatenating them followed by a sort.
 
 Write a function that rotates a list by k elements. For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
 
