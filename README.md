@@ -38,13 +38,13 @@ If your language of choice doesn’t have a build in list and/or string type (e.
 
 2 Write function that reverses a list, preferably in place.
 
-Write a function that checks whether an element occurs in a list.
+3 Write a function that checks whether an element occurs in a list.
 
-Write a function that returns the elements on odd positions in a list.
+4 Write a function that returns the elements on odd positions in a list.
 
-Write a function that computes the running total of a list.
+5 Write a function that computes the running total of a list.
 
-Write a function that tests whether a string is a palindrome.
+6 Write a function that tests whether a string is a palindrome.
 
 Write three functions that compute the sum of the numbers in a list: using a for-loop, a while-loop and recursion. (Subject to availability of these constructs in your language of choice.)
 
