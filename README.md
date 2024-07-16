@@ -1,7 +1,7 @@
-Simple Programming Problems: 
+Simple Programming Problems
 
 
-Elementary
+Elementary:
 
 Write a program that asks the user for their name and greets them with their name.
 
@@ -20,7 +20,7 @@ Write a guessing game where the user has to guess a secret number. After every g
 Write a program that prints the next 20 leap years.
 
 
-Lists, Strings
+Lists, Strings:
 
 Write a function that returns the largest element in a list.
 
@@ -93,7 +93,7 @@ Implement a balanced binary search tree of your choice. I like (a,b)-trees best.
 Compare the performance of insertion, deletion and search on your unbalanced search tree with your balanced search tree and a sorted list. Think about good input sequences. If you implemented an (a,b)-tree, think about good values of a and b.
 
 
-Advanced
+Advanced:
 
 Given two strings, write a program that efficiently finds the longest common subsequence.
 
@@ -115,7 +115,7 @@ Write a Memory game.
 
 Write a Tetris clone
 
-Open Ended
+Open Ended:
 
 Write a program that plays Hangman as good as possible. For example you can use a large dictionary like this and select the letter that excludes most words that are still possible solutions. Try to make the program as efficient as possible, i.e. don’t scan the whole dictionary in every turn.
 
