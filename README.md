@@ -1,4 +1,4 @@
-Simple Programming Problems
+ Simple Programming Problems
 Whenever I’m TA for a introductory CS class where students learn some programming language, I have trouble coming up with good exercises. Problems from Project Euler and the like are usually much too difficult for beginners, especially if they don’t have a strong background in mathematics. This page is a collection of progressively more difficult exercises that are suitable for people who just started learning. It will be extended as I come up with new exercises. Except for the GUI questions, exercises are generally algorithmic and should be solvable without learning any libraries. The difficulty of the exercises of course somewhat depends on the programming language you use. The List exercises for example are more complicated in languages like C that don’t have build-in support for lists. I suppose they are also useful, although much easier, whenever an experienced person wants to learn a new language. This guide has been translated to Chinese by Fidel Yi. Simple Programming Problems in Chinese Before you begin Learning to program means learning how to solve problems using code. Conceptually it is not very difficult to write a program that solves a problem that you can solve yourself. The skill you need to acquire is thinking very precisely about how you solve the problem and breaking it down into steps that are so simple that a computer can execute them. I encourage you to first solve a few instances of a problem by hand and think about what you did to find the solution. For example if the task is sorting lists, sort some short lists yourself. A reasonable method would be to find the smallest element, write it down and cross it out of the original list and repeat this process until you have sorted the whole list. Then you have to teach the computer 1) how to find the smallest element, 2) how to write it down, 3) how to cross it out, and wrap this in a loop. Then continue this task breakdown process until you’re confident you know how to write the necessary program. To make good progress in your programming task, you need to test your work as early and as thoroughly as possible. Everybody makes mistakes while programming and finding mistakes in programs consumes a very large part of a programmer’s work-day. Finding a problem in a small and easy piece of code is much simpler than trying to spot it in a large program. This is why you should try to test each sub task you identified during your task-breakdown by itself. Only after you’re confident that each part works as you expect you can attempt to plug them together. Make sure you test the complete program as well, errors can creep in in the way the different parts interact. You should try to automate your tests. The easier it is to test your program, the freer you are in experimenting with changes. The last important point is how you express your thoughts as code. In the same way that you can express the same argument in different ways in a normal English essay, you can express the same problem-solving method in different ways in code. Try for brevity. The lines that you don’t write are the lines where you can be sure that the don’t have bugs. Don’t be afraid to Google for idiomatic ways of doing the things you’d like to do (after you tried doing them yourself!). Remember that you don’t write the program for the computer, you write it for other humans (maybe a future you!). Choose names that explain things, add comments where these names don’t suffice. Never comment on what the code is doing, only write comments that explain why. This is a bad example:
 
 // This function checks whether a number is even def f(x): // compute x modulo 2 and check whether it is zero if modulo(x,2) == 0: // the number is even return True else: // the number is odd return False The exact same idea is much easier to understand if you write it like this:
@@ -98,15 +98,26 @@ Using a sample text, create a directed (multi-)graph where the words of a text a
 Do a random walk on this graph: Starting from an arbitrary node choose a random successor. If no successor exists, choose another random node.
 
 Write a program that automatically converts English text to Morse code and vice versa.
+
 Write a program that finds the longest palindromic substring of a given string. Try to be as efficient as possible!
+
 Think of a good interface for a list. What operations do you typically need? You might want to investigate the list interface in your language and in some other popular languages for inspiration.
+
 Implement your list interface using a fixed chunk of memory, say an array of size 100. If the user wants to add more stuff to your list than fits in your memory you should produce some kind of error, for example you can throw an exception if your language supports that.
+
 Improve your previous implementation such that an arbitrary number of elements can be stored in your list. You can for example allocate bigger and bigger chunks of memory as your list grows, copy the old elements over and release the old storage. You should probably also release this memory eventually if your list shrinks enough not to need it anymore. Think about how much bigger the new chunk of memory should be so that your performance won’t be killed by allocations. Increasing the size by 1 element for example is a bad idea.
+
 If you chose your growth right in the previous problem, you typically won’t allocate very often. However, adding to a big list sometimes consumes considerable time. That might be problematic in some applications. Instead try allocating new chunks of memory for new items. So when your list is full and the user wants to add something, allocate a new chunk of 100 elements instead of copying all elements over to a new large chunk. Think about where to do the book-keeping about which chunks you have. Different book keeping strategies can quite dramatically change the performance characteristics of your list.
+
 Implement a binary heap. Once using a list as the base data structure and once by implementing a pointer-linked binary tree. Use it for implementing heap-sort.
+
 Implement an unbalanced binary search tree.
+
 Implement a balanced binary search tree of your choice. I like (a,b)-trees best.
+
 Compare the performance of insertion, deletion and search on your unbalanced search tree with your balanced search tree and a sorted list. Think about good input sequences. If you implemented an (a,b)-tree, think about good values of a and b.
+
+
 Advanced
 
 Given two strings, write a program that efficiently finds the longest common subsequence.
@@ -132,7 +143,9 @@ Write a Tetris clone
 Open Ended
 
 Write a program that plays Hangman as good as possible. For example you can use a large dictionary like this and select the letter that excludes most words that are still possible solutions. Try to make the program as efficient as possible, i.e. don’t scan the whole dictionary in every turn.
+
 Write a program that plays Rock, Paper, Scissors better than random against a human. Try to exploit that humans are very bad at generating random numbers.
+
 Write a program that plays Battle Ship against human opponents. It takes coordinates as input and outputs whether that was a hit or not and its own shot’s coordinates.
 Other Collections
 
